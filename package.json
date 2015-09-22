@@ -1,0 +1,51 @@
+{
+  "name": "utils-yaml-parse",
+  "version": "0.0.0",
+  "description": "Wraps yaml#safeLoad in a try/catch block.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "mocha",
+    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kgryte/utils-yaml-parse.git"
+  },
+  "keywords": [
+    "utils",
+    "util",
+    "utilities",
+    "utility",
+    "yaml",
+    "parse",
+    "try",
+    "trap",
+    "catch"
+  ],
+  "bugs": {
+    "url": "https://github.com/kgryte/utils-yaml-parse/issues"
+  },
+  "dependencies": {
+    "js-yaml": "^3.4.2"
+  },
+  "devDependencies": {
+    "chai": "3.x.x",
+    "codecov.io": "^0.1.5",
+    "istanbul": "^0.3.0",
+    "jshint": "2.x.x",
+    "jshint-stylish": "2.x.x",
+    "mocha": "2.x.x"
+  },
+  "license": "MIT"
+}
