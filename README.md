@@ -2,7 +2,7 @@ Parse
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Wraps [yaml#safeLoad](https://github.com/nodeca/js-yaml) in a try/catch block.
+> Attempts to parse an input string as [YAML](http://yaml.org/).
 
 
 ## Installation
@@ -20,7 +20,7 @@ var parse = require( 'utils-yaml-parse' );
 
 #### parse( value[, options] )
 
-Wraps [yaml#safeLoad](https://github.com/nodeca/js-yaml) in a `try/catch` block.
+Attempts to parse an input `string` as [YAML](http://yaml.org/).
 
 ``` javascript
 var out = parse( 'beep: "boop"' );
@@ -35,6 +35,7 @@ The `function` signature is the same as [yaml#safeLoad](https://github.com/nodec
 
 ## Notes
 
+*	This `function` wraps [yaml#safeLoad](https://github.com/nodeca/js-yaml) in a `try/catch` block.
 *	The presence of `try/catch` within any `function` prevents JavaScript compiler optimization. By isolating the `try/catch` block, we minimize the extent of optimization hell.
 
 
