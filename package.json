@@ -1,6 +1,6 @@
 {
   "name": "utils-yaml-parse",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Attempts to parse an input string as YAML.",
   "author": {
     "name": "Athan Reines",
