@@ -1,7 +1,7 @@
 {
   "name": "utils-yaml-parse",
   "version": "0.0.0",
-  "description": "Wraps yaml#safeLoad in a try/catch block.",
+  "description": "Attempts to parse an input string as YAML.",
   "author": {
     "name": "Athan Reines",
     "email": "kgryte@gmail.com"
